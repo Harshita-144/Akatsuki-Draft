@@ -10,6 +10,7 @@ import aiRoutes from './routes/aiRoutes.js';
 import { notFoundHandler, errorHandler } from './middleware/errorMiddleware.js';
 
 const app = express();
+app.set('trust proxy', 1);
 
 // Security HTTP headers
 app.use(helmet());
